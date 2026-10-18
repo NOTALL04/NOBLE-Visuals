@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOBLE Visuals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <a href="#" class="logo">NOBLE <span>Visuals</span></a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cartbtn" id="openCart">Order (<span id="count">0</span>)</button>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Websites and graphics that make your brand stand out.</h1>
+        <p>Logos, flyers, social media designs and websites for your business. Clear prices, fast delivery.</p>
+        <a href="#services" class="btn">See services</a>
+        <a href="#contact" class="btn ghost">Get a quote</a>
+      </div>
+      <div class="stage">
+        <span class="big a">🖥️</span>
+        <span class="big b">🎨</span>
+        <span class="big c">✏️</span>
+      </div>
+    </section>
+
+    <section class="perks">
+      <div>
+        <b>Custom work</b>
+        <span>Every design is made for your business, never a template.</span>
+      </div>
+      <div>
+        <b>Free revisions</b>
+        <span>We keep adjusting until you are happy.</span>
+      </div>
+      <div>
+        <b>Fast turnaround</b>
+        <span>Graphics in days, websites in weeks.</span>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <h2>Have a project in mind?</h2>
+        <p>Message us and we will send you a quote.</p>
+      </div>
+      <a href="#" class="btn" id="chat">Chat on WhatsApp</a>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="yr"></span> NOBLE Visuals. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Shopping Cart Side Drawer -->
+  <div id="drawer" aria-hidden="true">
+    <header>
+      <h3>Your order</h3>
+      <button class="close" id="closeCart">&times;</button>
+    </header>
+    <div id="items"></div>
+    <div class="total">
+      <span>Total</span>
+      <span id="total">₦0</span>
+    </div>
+    <a href="#" class="btn" id="checkout" style="display: none; text-align: center; width: 100%;">Order on WhatsApp</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
